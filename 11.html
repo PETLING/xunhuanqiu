@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1user-scalable=no" />
+		<meta name="author" content="彭智阳" />
+		<title>あなたに言いたい</title>
+		<link rel="stylesheet" href="s.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="bubble"></div>
+			<div class="shadow"></div>
+		</div>
+
+		<img src="晴天.jpg" id="qing">
+		<div class="box1" id="tian">
+
+		</div>
+
+		<div class="box">
+			<img src="晴天(副).jpg" class="tian">
+			<!-- <button onclick="qieHuan()" onmouseout="qieHuan1()" id="j">切换</button> -->
+			<button id="j">切换</button>
+		</div>
+
+		<script type="text/javascript">
+			var s = document.getElementById("qing")
+			var a = document.getElementById("tian")
+			var btn = document.getElementById("j")
+
+			btn.onclick = function() {
+				if (a.style.display == 'none') {
+					a.style.display = 'block'
+					s.style.display = 'block'
+				} else {
+					a.style.display = 'none'
+					s.style.display = 'none'
+				}
+			}
+			// function qieHuan() {
+			// 	a.style.display = 'block'
+			// 	s.style.display = 'block'
+			// }
+
+			// function qieHuan1() {
+			// 	a.style.display = 'none'
+			// 	s.style.display = 'none'
+			// }
+		</script>
+	</body>
+</html>
